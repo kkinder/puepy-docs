@@ -1,0 +1,3 @@
+# PyScript Config
+
+Start typing here...

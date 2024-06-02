@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="6e0096ca">
+        <description>Created after removal of "Page" from PuePy Docs</description>
+        <accepts>Page.html</accepts>
+    </rule>
+    <rule id="6c194bec">
+        <description>Created after removal of "Runtimes" from PuePy Docs</description>
+        <accepts>Runtimes.html</accepts>
+    </rule>
+    <rule id="2cce3361">
+        <description>Created after removal of "Contributing" from PuePy Docs</description>
+        <accepts>Contributing.html</accepts>
+    </rule>
+</rules>

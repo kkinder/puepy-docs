@@ -4,42 +4,43 @@ You must always create a PuePy `Application` instance, even if only one page exi
 running code base should only create one application instance. To make use of the application, you will need to define
 at least one page and also mount the application (and thus the) page onto an existing HTML element.
 
-<tabs>
-    <tab id="html-ver" title="index.html">
-        <code-block lang="html">
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;title&gt;PuePy Hello, World&lt;/title&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://pyscript.net/releases/2024.5.2/core.css&quot;&gt;
-    &lt;script type=&quot;module&quot; src=&quot;https://pyscript.net/releases/2024.5.2/core.js&quot;&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
-    &lt;script type=&quot;mpy&quot; src=&quot;./hello_world.py&quot; config=&quot;../pyscript.json&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code-block>
-    </tab>
-    <tab id="main-ver" title="main.py">
-        <code-block lang="python">
-        from puepy import Application
+```Python
+from puepy import Application
 
-        app = Application()
-        
-        
-        @app.page()
-        class HelloWorldPage(Page):
-        def populate(self):
+app = Application()
+
+
+@app.page()
+class HelloWorldPage(Page):
+    def populate(self):
         t.h1("Hello, World!")
-        
-        
-        app.mount("#app")
-</code-block>
-    </tab>
-</tabs>
+
+
+app.mount("#app")
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PuePy Hello, World</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://pyscript.net/releases/2024.5.2/core.css">
+    <script type="module"
+            src="https://pyscript.net/releases/2024.5.2/core.js"
+    ></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="mpy" 
+            src="./hello_world.py" 
+            config="../pyscript.json"></script>
+</body>
+</html>
+```
 
 ## Instance methods
 

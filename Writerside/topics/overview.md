@@ -26,7 +26,3 @@ PuePy, by way of PyScript, supports two runtime environments to varying degrees:
 See [PyScript's explanation for more information about the differing runtimes](https://docs.pyscript.net/2024.5.2/user-guide/architecture/).
 
 
-<warning>
-HTML5 history mode / client-side routing is <emphasis>not</emphasis> supported with MicroPython. If you use MicroPython, you need to handle routing on the server-side and render each web page in a traditional way. This is probably better anyway, as MicroPython's implementation lacks the memory management features built into the Pyodide runtime.
-</warning>
-

@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 
 env:
-  INSTANCE: 'Writerside/hi'
-  ARTIFACT: 'webHelpHI2-all.zip'
+  INSTANCE: 'Writerside/pd'
+  ARTIFACT: 'webHelpPD2-all.zip'
   DOCKER_VERSION: '241.15989'
 
 jobs:

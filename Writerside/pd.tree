@@ -8,6 +8,7 @@
 
     <toc-element topic="overview.md">
     </toc-element>
+    <toc-element topic="Installation.md"/>
     <toc-element topic="Tutorial.md">
         <toc-element topic="Hello-World.md"/>
         <toc-element topic="Hello-Name.md"/>

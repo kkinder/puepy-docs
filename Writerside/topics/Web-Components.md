@@ -1,8 +1,8 @@
 # Web Components
 
 <tldr>
-    <p>Try It: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/09_webcomponents/index.html">Working Demo</a></p>
-    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (09_webcomponents)</p>
+    <p>Try It: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/tutorial/09_webcomponents/index.html">Working Demo</a></p>
+    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (tutorial/09_webcomponents)</p>
 </tldr>
 
 

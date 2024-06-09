@@ -1,8 +1,8 @@
 # Routing
 
 <tldr>
-    <p>Try It: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/07_routing/index.html">Working Demo</a></p>
-    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (07_routing)</p>
+    <p>Try It: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/tutorial/07_routing/index.html">Working Demo</a></p>
+    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (tutorial/07_routing)</p>
 </tldr>
 
 ## Pages and Routes

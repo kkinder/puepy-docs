@@ -1,8 +1,8 @@
 # Watchers
 
 <tldr>
-    <p>Try It: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/05_watchers/index.html">Working Demo</a></p>
-    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (05_watchers)</p>
+    <p>Try It: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/tutorial/05_watchers/index.html">Working Demo</a></p>
+    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (tutorial/05_watchers)</p>
 </tldr>
 
 When state changes and you want to monitor specific variables, use `on_<variable>_change` methods in your component.

@@ -1,8 +1,8 @@
 # Components
 
 <tldr>
-    <p>Try It: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/06_components/index.html">Working Demo</a></p>
-    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (06_components)</p>
+    <p>Try It: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/tutorial/06_components/index.html">Working Demo</a></p>
+    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (tutorial/06_components)</p>
 </tldr>
 
 ## Registering and reusing components

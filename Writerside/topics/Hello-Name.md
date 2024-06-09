@@ -1,8 +1,8 @@
 # Hello, Name
 
 <tldr>
-    <p>Try It: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/02_hello_name/index.html">Working Demo</a></p>
-    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (02_hello_name)</p>
+    <p>Try It: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/tutorial/02_hello_name/index.html">Working Demo</a></p>
+    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (tutorial/02_hello_name)</p>
 </tldr>
 
 - 

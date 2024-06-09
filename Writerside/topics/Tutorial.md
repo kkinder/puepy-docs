@@ -19,7 +19,7 @@ relevant code from them, but each fully working example has all relevant files i
 PyScript.com:
 
 - [Tutorial Code](https://pyscript.com/@kkinder/puepy-tutorial/latest)
-- [Working demos](https://kkinder.pyscriptapps.com/puepy-tutorial/latest/)
+- [Working demos](https://kkinder.pyscriptapps.com/puepy-tutorial/latest/tutorial/)
 
 To follow this tutorial, you should have a working understanding of Python, basic web technology, and programming. No
 JavaScript necessary. 🤘🐍

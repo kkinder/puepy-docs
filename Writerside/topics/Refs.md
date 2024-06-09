@@ -1,9 +1,9 @@
 # Refs
 
 <tldr>
-    <p>The Problem: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/04_refs_problem/index.html">Broken Demo</a></p>
-    <p>The Solution: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/04_refs_problem/solution.html">Fixed Demo</a></p>
-    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (04_refs_problem)</p>
+    <p>The Problem: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/tutorial/04_refs_problem/index.html">Broken Demo</a></p>
+    <p>The Solution: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/tutorial/04_refs_problem/solution.html">Fixed Demo</a></p>
+    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (tutorial/04_refs_problem)</p>
 </tldr>
 
 ## Problems with continuity
@@ -39,7 +39,7 @@ app.mount("#app")
 ```
 
 As you can tell in a demo of
-the [the problem](https://kkinder.pyscriptapps.com/puepy-tutorial/latest/04_refs_problem/index.html), as you type
+the [the problem](https://kkinder.pyscriptapps.com/puepy-tutorial/latest/tutorial/04_refs_problem/index.html), as you type
 elements above the `<input>` element redraw and the text field loses focus, which causes a jarring user experience.
 
 Because PuePy doesn't know which elements are supposed to "match" the ones from the previous refresh, and the ordering
@@ -53,7 +53,7 @@ ref should be unique to the component you're coding: that is, each ref should be
 the `populate()` method you're writing.
 
 When PuePy finds an element with a ref, it will reuse that ref if it existed in the last refresh, modifying it with any
-updated parameters passed to it. [Try out this version](https://kkinder.pyscriptapps.com/puepy-tutorial/latest/04_refs_problem/solution.html):
+updated parameters passed to it. [Try out this version](https://kkinder.pyscriptapps.com/puepy-tutorial/latest/tutorial/04_refs_problem/solution.html):
 
 ```Python
 from puepy import Application, Page, t

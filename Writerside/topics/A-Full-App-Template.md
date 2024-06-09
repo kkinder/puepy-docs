@@ -1,8 +1,8 @@
 # A Full App Template
 
 <tldr>
-    <p>Try It: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/10_full_app/index.html">Working Demo</a></p>
-    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (10_full_app)</p>
+    <p>Try It: <a href="https://kkinder.pyscriptapps.com/puepy-tutorial/latest/tutorial/10_full_app/index.html">Working Demo</a></p>
+    <p>Experiment: <a href="https://pyscript.com/@kkinder/puepy-tutorial/latest">PyScript</a> (tutorial/10_full_app)</p>
 </tldr>
 
 Finally, we'll tie everything we've learned together by building a "full app" in CPython.
@@ -20,7 +20,7 @@ For our larger example, we'll have several files:
 
 To include chart.js in our project, we add `js_modules` to our PyScript config file with a pointer to the chart.js CDN:
 
-```json
+```text
   "js_modules": {
     "main": {
       "https://cdn.jsdelivr.net/npm/chart.js": "chart"

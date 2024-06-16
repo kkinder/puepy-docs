@@ -3,15 +3,14 @@
 ## Client-side installation
 
 Although PuePy is [available on pypi](https://pypi.org), because PuePy is intended primarily as a client-side framework,
-"installation" will usually amount to including code your local web server, a CDN, or both.
+"installation" is best achieved by downloading the wheel file and including it in your pyscript `packages` configuration.
 
-The current preferred installation method is to use PyScript from a CDN and a minimal zip of code containing only the
-runtime PuePy code. A simple first project (with no web server) would be:
+A simple first project (with no web server) would be:
 
 - `index.html` (index.html file)
 - `pyscript.json` (pyscript config file)
 - `hello.py` (Hello World code)
-- `puepy-bundle.zip` (PuePy runtime)
+- `puepy-0.3.0-py3-none-any.whl` (PuePy wheel file)
 
 The runtime file would contain only the files needed to actually execute PuePy code; no tests or other files. Runtime
 zips are available in each release's notes on GitHub.
@@ -19,7 +18,7 @@ zips are available in each release's notes on GitHub.
 ### Downloading client runtime
 
 ```Bash
-curl -O https://github.com/user-attachments/files/15751378/puepy-bundle.zip
+curl -O https://files.pythonhosted.org/packages/b0/d2/2dcd29df8eea125e2b4ba31a3f837886a96c664e61f728e1375d54f9f929/puepy-0.3.0-py3-none-any.whl
 ```
 
 ### index.html
@@ -32,8 +31,8 @@ curl -O https://github.com/user-attachments/files/15751378/puepy-bundle.zip
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!-- Load PyScript from CDN -->
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.5.2/core.css">
-    <script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.6.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.6.1/core.js"></script>
 </head>
 <body>
     <!-- Where application is mounted -->
@@ -54,9 +53,9 @@ need to include the puepy-bundle.zip:
 {
   "name": "PuePy Tutorial",
   "debug": true,
-  "files": {
-    "./puepy-bundle.zip": "./*"
-  },
+  "packages": [
+    "./puepy-0.3.0-py3-none-any.whl"
+  ],
   "js_modules": {
     "main": {
       "https://cdn.jsdelivr.net/npm/morphdom@2.7.2/+esm": "morphdom"
@@ -65,7 +64,7 @@ need to include the puepy-bundle.zip:
 }
 ```
 
-This configuration tells PyScript to include our PuePy runtime environment `./puepy-bundle.zip` and
+This configuration tells PyScript to include our PuePy runtime environment `./puepy-0.3.0-py3-none-any.whl` and
 [Morphdom](https://github.com/patrick-steele-idem/morphdom), which PuePy uses to modify the DOM at runtime.
 
 ### hello.py

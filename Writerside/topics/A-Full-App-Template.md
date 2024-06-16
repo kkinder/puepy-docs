@@ -41,14 +41,24 @@ class Chart(Component):
     props = ["type", "data", "options"]
     enclosing_tag = "canvas"
 
-    def post_render(self, element):
-        import js
+    def on_redraw(self):
+        self.call_chartjs()
 
-        js.Chart.new(
-            element,
+    def on_ready(self):
+        self.call_chartjs()
+
+    def call_chartjs(self):
+        if hasattr(self, "_chart_js"):
+            self._chart_js.destroy()
+
+        self._chart_js = js.Chart.new(
+            self.element,
             jsobj(type=self.type, data=self.data, options=self.options),
         )
 ```
+
+We call the JavaScript library in two places. When the component is added to the DOM (on_ready) and when it's going to
+be redrawn (on_redraw).
 
 ## Niceties 
 
@@ -57,21 +67,26 @@ class Chart(Component):
 In `components.py`, we define a common application layout, then reuse it in multiple pages:
 
 ```Python
-
-@dataclass
 class SidebarItem:
-    label: str
-    icon: str
-    route: Route
+    def __init__(self, label, icon, route):
+        self.label = label
+        self.icon = icon
+        self.route = route
 
 
 @t.component()
 class AppLayout(Component):
+    compose_app_state = ["authenticated_user"]
+
     sidebar_items = [
-        SidebarItem("Dashboard", "emoji-sunglasses", "welcome_page"),
+        SidebarItem("Dashboard", "emoji-sunglasses", "dashboard_page"),
         SidebarItem("Charts", "graph-up", "charts_page"),
         SidebarItem("Forms", "input-cursor-text", "forms_page"),
     ]
+
+    def precheck(self):
+        if not self.application.state["authenticated_user"]:
+            raise exceptions.Unauthorized()
 
     def populate(self):
         with t.sl_drawer(label="Menu", placement="start", classes="drawer-placement-start", ref="drawer"):
@@ -106,7 +121,8 @@ class AppLayout(Component):
                     t.sl_menu_item("Logout", t.sl_icon(slot="suffix", name="box-arrow-right"), value="logout")
 
     def on_menu_select(self, event):
-        print("You selected", event.detail.item.value)
+        if event.detail.item.value == "logout":
+            self.application.state["authenticated_user"] = ""
 
     def populate_sidebar(self):
         for item in self.sidebar_items:

@@ -42,6 +42,18 @@ app.mount("#app")
 </html>
 ```
 
+## Application state
+
+Like components, applications can have state.
+
+```Python
+class AwesomeApp(Application):
+    def initial(self):
+        return {"authenticated_user": ""}
+```
+
+Application state can be access and updated in components using `self.application.state`
+
 ## Instance methods
 
 - `app.install_router(router_class, **kwargs)`: Instantiates a Router class with any keyword arguments and configures it on the application. See also the [Router Developer Guide](Router.md) or [Routing Tutorial chapter](Routing.md).

@@ -31,4 +31,4 @@ from bs4 import BeautifulSoup, Comment
 ```
 
 For more information, including packages available to
-MicroPython, [refer to the PyScript docs](https://docs.pyscript.net/2024.5.2/user-guide/configuration/#packages).
+MicroPython, [refer to the PyScript docs](https://docs.pyscript.net/2024.6.2/user-guide/configuration/#packages).

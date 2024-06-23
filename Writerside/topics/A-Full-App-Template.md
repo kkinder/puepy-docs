@@ -29,7 +29,7 @@ To include chart.js in our project, we add `js_modules` to our PyScript config f
 ```
 
 <tip>
-See <a href="https://docs.pyscript.net/2024.5.2/user-guide/configuration/#javascript-modules">JavaScript Modules</a> in
+See <a href="https://docs.pyscript.net/2024.6.2/user-guide/configuration/#javascript-modules">JavaScript Modules</a> in
 PyScript's documentation for additional information on loading JavaScript libraries into your project.
 </tip>
 

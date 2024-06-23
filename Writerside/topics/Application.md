@@ -1,4 +1,4 @@
-# Application
+f# Application
 
 You must always create a PuePy `Application` instance, even if only one page exists on your site. Additionally, each
 running code base should only create one application instance. To make use of the application, you will need to define
@@ -28,9 +28,9 @@ app.mount("#app")
     <meta name="viewport" 
           content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet"
-          href="https://pyscript.net/releases/2024.5.2/core.css">
+          href="https://pyscript.net/releases/2024.6.2/core.css">
     <script type="module"
-            src="https://pyscript.net/releases/2024.5.2/core.js"
+            src="https://pyscript.net/releases/2024.6.2/core.js"
     ></script>
 </head>
 <body>

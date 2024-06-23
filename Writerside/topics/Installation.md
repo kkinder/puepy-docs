@@ -31,8 +31,8 @@ curl -O https://files.pythonhosted.org/packages/b0/d2/2dcd29df8eea125e2b4ba31a3f
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!-- Load PyScript from CDN -->
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.6.1/core.css">
-    <script type="module" src="https://pyscript.net/releases/2024.6.1/core.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.6.2/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.6.2/core.js"></script>
 </head>
 <body>
     <!-- Where application is mounted -->

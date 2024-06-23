@@ -1,6 +1,6 @@
 # PyScript Config
 
-PyScript's configuration is fully [documented](https://docs.pyscript.net/2024.5.2/user-guide/configuration/) in the
+PyScript's configuration is fully [documented](https://docs.pyscript.net/2024.6.2/user-guide/configuration/) in the
 PyScript documentation. Configuration for PuePy simply requires adding the PuePy runtime files (
 see [Installation](Installation.md)) and
 Morphdom:

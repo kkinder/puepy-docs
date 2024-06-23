@@ -23,6 +23,6 @@ PuePy, by way of PyScript, supports two runtime environments to varying degrees:
 - PyScript's [MicroPython](https://micropython.org) runtime is far, far smaller but not nearly as complete. It is ideal
   for situations where webpage response time is important.
 
-See [PyScript's explanation for more information about the differing runtimes](https://docs.pyscript.net/2024.5.2/user-guide/architecture/).
+See [PyScript's explanation for more information about the differing runtimes](https://docs.pyscript.net/2024.6.2/user-guide/architecture/).
 
 

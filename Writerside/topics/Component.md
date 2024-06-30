@@ -65,4 +65,21 @@ class MyPage(Page):
 
 For more information on why this is useful, see the [Refs Tutorial Topic](Refs.md).
 
+## Enclosing tags
 
+All components by design must map directly to one *enclosing* tag, in addition to any additional elements rendered in
+`populate()`. The enclosing tag can be defined as a class attribute. For example, in
+[the full application example](A-Full-App-Template.md) from the tutorial, we define a custom component for charts:
+
+```Python
+@t.component()
+class Chart(Component):
+    ...
+    
+    enclosing_tag = "canvas"
+
+    ...
+```
+
+That bit about `enclosing_tag = "canvas"` tells PuePy that the Chart component should be rendered in HTML as a 
+`<canvas>` tag. If enclosing tag is not specified, `div` is the default.

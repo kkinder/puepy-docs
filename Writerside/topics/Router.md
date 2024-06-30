@@ -3,6 +3,21 @@
 The PuePy router enables you to do client-side routing to multiple "pages", each with its own URL and optionally, URL
 parameters.
 
+## Use without the router
+
+Use of routing is optional in PuePy. If you do not install a router, you can only define one page, and that page will
+be mounted on the target element.
+
+```Python
+@app.page()
+class DefaultPage(Page):
+    ...
+
+app.mount("#app")
+```
+
+Using PuePy without the router is ideal when you only have one page, or when you plan to use server-side routing.
+
 ## Enabling the router
 
 Routing is an entirely optional feature of PuePy. Many projects may prefer to rely on backend-side routing, like a

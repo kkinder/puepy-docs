@@ -27,6 +27,7 @@
         <toc-element topic="Attributes-Properties-and-State.md"/>
         <toc-element topic="Router.md"/>
         <toc-element topic="Reactivity.md"/>
+        <toc-element topic="CSS-Class-Names.md"/>
         <toc-element topic="Loading-Time.md"/>
         <toc-element topic="PyScript-Config.md"/>
     </toc-element>

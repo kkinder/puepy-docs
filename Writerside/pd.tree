@@ -10,6 +10,7 @@
     </toc-element>
     <toc-element topic="Installation.md"/>
     <toc-element topic="Tutorial.md">
+        <toc-element topic="Using-This-Tutorial.md"/>
         <toc-element topic="Hello-World.md"/>
         <toc-element topic="Hello-Name.md"/>
         <toc-element topic="Counter.md"/>

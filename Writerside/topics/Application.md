@@ -1,4 +1,4 @@
-f# Application
+# Application
 
 You must always create a PuePy `Application` instance, even if only one page exists on your site. Additionally, each
 running code base should only create one application instance. To make use of the application, you will need to define

@@ -14,8 +14,6 @@ from puepy import Application, Page, Component, t
 from puepy.router import Router
 
 app = Application()
-
-# link_mode can be set to "html5" to use html5 history mode, or "direct" to cause a page reload
 app.install_router(Router, link_mode=Router.LINK_MODE_HASH)
 
 pets = {
@@ -33,7 +31,7 @@ class Link(Component):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.add_event_handler("click", self.on_click)
+        self.add_event_listener("click", self.on_click)
 
     def set_href(self, href):
         if issubclass(href, Page):
@@ -47,8 +45,8 @@ class Link(Component):
     def on_click(self, event):
         if (
             isinstance(self._resolved_href, str)
-            and self._resolved_href.startswith("/")
-            and self.page.application.navigate_to_path(self._resolved_href)
+            and self._resolved_href[0] in "#/"
+            and self.page.router.navigate_to_path(self._resolved_href)
         ):
             # A page was found; prevent navigation and navigate to page
             event.preventDefault()
@@ -79,6 +77,7 @@ class DefaultPage(Page):
 
 
 app.mount("#app")
+
 ```
 
 ### Specifying Paths

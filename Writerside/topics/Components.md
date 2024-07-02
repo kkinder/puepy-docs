@@ -35,7 +35,7 @@ class Card(Component):
         t.button("Understood", on_click=self.on_button_click)
 
     def on_button_click(self, event):
-        self.trigger_event("my_custom_event", detail={"type": self.type})
+        self.trigger_event("my-custom-event", detail={"type": self.type})
 
 
 @app.page()
@@ -68,7 +68,7 @@ class ComponentPage(Page):
             t.p(self.state["message"])
 
     def handle_custom_event(self, event):
-        self.state["message"] = f"Custom event from card with type {event.detail.get("type")}"
+        self.state["message"] = f"Custom event from card with type {event.detail.get('type')}"
 
 
 app.mount("#app")
